@@ -1,6 +1,9 @@
 # Smart To-Do List
 
 A responsive, single-page To-Do List web app built with vanilla HTML, CSS, and JavaScript. Tasks persist across page refreshes using the browser's Local Storage — no backend or build step required.
+## 📸 Preview
+
+![Smart To-Do List](screenshots/todo.png)
 
 ## Features
 
