@@ -1,5 +1,11 @@
 # Smart To-Do List
 
+# 📝 Smart To-Do List
+
+🌐 **Live Demo:** https://vaibhaviagnihotri2006-gif.github.io/todo-list/
+
+A responsive To-Do List built with HTML, CSS, and JavaScript.
+
 A responsive, single-page To-Do List web app built with vanilla HTML, CSS, and JavaScript. Tasks persist across page refreshes using the browser's Local Storage — no backend or build step required.
 ## 📸 Preview
 
