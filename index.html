@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart To-Do List</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+</head>
+<body>
+
+  <main class="app">
+    <div class="card">
+
+      <header class="header">
+        <h1 class="title">To‑Do List</h1>
+        <p class="subtitle">Small tasks, done in order.</p>
+      </header>
+
+      <form id="task-form" class="task-form" autocomplete="off">
+        <input
+          type="text"
+          id="task-input"
+          class="task-input"
+          placeholder="Enter your task…"
+          maxlength="100"
+          aria-label="New task"
+        />
+        <button type="submit" class="btn btn-primary">Add Task</button>
+      </form>
+      <p id="input-error" class="input-error" role="alert" aria-live="polite"></p>
+
+      <div class="toolbar">
+        <div class="filters" role="tablist" aria-label="Filter tasks">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter-btn" data-filter="active" role="tab" aria-selected="false">Active</button>
+          <button class="filter-btn" data-filter="completed" role="tab" aria-selected="false">Completed</button>
+        </div>
+        <button id="clear-completed" class="btn btn-ghost">Clear completed</button>
+      </div>
+
+      <ul id="task-list" class="task-list"></ul>
+
+      <p id="empty-state" class="empty-state" hidden>
+        Nothing here yet — add your first task above.
+      </p>
+
+      <footer class="footer">
+        <span id="tasks-left">Tasks Left: 0</span>
+        <button id="theme-toggle" class="btn btn-ghost" type="button" aria-label="Toggle dark mode">
+          🌙 Dark mode
+        </button>
+      </footer>
+
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
